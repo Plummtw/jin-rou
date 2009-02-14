@@ -21,9 +21,9 @@ class MainController < Controller
     end
   }
 
-  def index
-    '[[locale_name]]'
-  end
+  #def index
+  #  '[[locale_name]]'
+  #end
 
   def locale
     @locales = Ramaze::Tool::Localize.languages.map{ |lang|

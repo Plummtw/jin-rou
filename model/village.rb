@@ -9,10 +9,10 @@ class Village
   
   property :max_player, Integer
   property :options,    String
-  property :start_time  DateTime
-  property :end_time    DateTime
+  property :start_time, DateTime
+  property :end_time,   DateTime
   
-  property :victory     Integer
+  property :victory,    Integer
 
   has 1, :manager
   has n, :players
