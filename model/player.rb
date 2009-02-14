@@ -9,6 +9,7 @@ class Player
   property :name,     String
   property :password, String, :size => 40
   property :salt,     String, :size => 12
+  property :alive?,   Boolean
 
   belongs_to :village
   belongs_to :role
