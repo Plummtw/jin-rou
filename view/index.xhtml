@@ -1,0 +1,379 @@
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+ <td>
+  <a href="index.php"><img src="http://sapporo.cool.ne.jp/sakuratw/img/top_title.jpg" border="0"></a>
+   <div align="right"><strong>godfat測試伺服器</strong></div>
+ </td>
+</tr>
+
+<noscript>
+ <tr>
+  <td align="center">
+   <span style="font-size:15pt;color:red;font-weight:bold">＜＜ 請啟用JavaScript ＞＞</span>
+  </td>
+ </tr>
+</noscript>
+
+<tr>
+ <table border="0" cellpadding="0" cellspacing="0" width="100%"><td></td>
+ </table>
+</tr>
+
+<tr>
+ <td width="190" valign="top">
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td valign="top">
+     <table border="0" cellpadding="0" cellspacing="0" width="140px">
+      <tr>
+       <td>
+        <table border="0" cellpadding="5" cellspacing="0" width="140px" style="border:1px solid #CC3300;">
+          <tr>
+           <th bgcolor="#CCFFCC"><strong>選單</strong></th>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="5">
+         <tr>
+          <td valign="top"><small><font color="#666666">・</font></small></td>
+          <td><a href="script_info.php">系統特點</a></td>
+         </tr>
+         <tr>
+          <td valign="top"><small><font color="#666666">・</font></small></td>
+          <td><a href="rule.php">遊戲規則</a></td>
+         </tr>
+         <tr>
+          <td valign="top"><small><font color="#666666">・</font></small></td>
+          <td><a href="version.php">版本紀錄</a></td>
+         </tr>
+         <tr>
+          <td valign="top"><small><font color="#666666">・</font></small></td>
+          <td><a href="old_log.php">紀錄閱覽</a></td>
+         </tr>
+         <tr>
+          <td valign="top"><small><font color="#666666">・</font></small></td>
+          <td><a href="icon_view.php">頭像一覽</a></td>
+         </tr>
+         <tr>
+          <td valign="top"><small><font color="#666666">・</font></small></td>
+          <td><a href="icon_upload.php">頭像登錄</a></td>
+         </tr>
+        </table>
+       </td>
+      </tr>
+     </table>
+    </td>
+    <td width="5%"><span style="margin:10px;" align=left></span></td>
+    <td width="95%" valign="top">
+     <fieldset>
+      <legend><strong>伺服器公告</strong></legend>
+      <div style="line-height:135%;margin:20px 20px 30px;">
+       <strong>目前版本 1.2.59 Build0213
+       <br>
+       <br>※為了搭配鑽石伺服器，下班時段(含假日)本伺服器自動限制為三村。
+       <br>※下班時段(含假日)鑽石伺服器會自動開放。
+       <br>
+       <br>如果有BUG或意見請寄信給我 ptt:godfat
+       <br>※關於背德，17號白天會先修改部份功能，正常後才會慢慢導入。
+       <br>屆時會直接修改鑽石伺服器來當測試平台。
+       <br>
+       <br>
+       <a href="list.php" target="_blank">聯合遊戲列表</a>、<a href="http://wolf.liouming.net/" target="_blank">流鳴主伺服器</a>、<a href="http://sbh.idv.tw/jinro_pen/" target="_blank">蜜蜂主伺服器</a>、<a href="http://diam.ngct.net" target="_blank">鑽石伺服器</a><br></strong>
+      </div>
+     </fieldset>
+     <fieldset>
+      <legend><strong>遊戲列表</strong></legend>
+      <div style="line-height:135%;margin:20px 20px 30px;">
+      </div>
+     </fieldset>
+     <form method="POST" action="room_manager.php">
+      <input name="command" type="hidden" value="CREATE_ROOM">
+      <fieldset>
+       <legend><strong>建立村子</strong></legend>
+       <table>
+        <tr>
+         <td><label><strong>　村子名稱：</strong></label></td>
+         <td><input name="room_name" type="text" size="45" style="border-width:1px;border-style:solid;border-color:silver;background-color:aliceblue;"> 村<br></td>
+        </tr>
+        <tr>
+         <td><label><strong>　村子說明：</strong></label></td>
+         <td><input name="room_comment" type="text" size="50" style="border-width:1px;border-style:solid;border-color:silver;background-color:aliceblue;"></td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　最大人數：</strong></label></td>
+         <td>
+          <input type="radio" name="max_player" value="8">8
+          <input type="radio" name="max_player" value="16">16
+          <input type="radio" name="max_player" value="22" checked>22
+          </select>
+         </td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　希望角色：</strong></label></td>
+         <td>
+           <input name="game_option_wish_role" value="wish_role" type="checkbox" style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">
+           <small>(打勾後將可選擇希望角色)</small>
+         </td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　限時時間：</strong></label></td>
+         <td>
+          <input name="game_option_real_time" value="real_time" type="checkbox" style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">
+          <small>(限制投票實際時間　白：<input name="game_option_real_time_day" value="4" type="text" size=2 maxlength=2 style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">分
+                                    夜：<input name="game_option_real_time_night" value="3" type="text" size=2 maxlength=2 style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">分　)</small>
+         </td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　第一天晚上的替身君：</strong></label></td>
+         <td>
+          <input name="game_option_dummy_boy" value="dummy_boy" type="checkbox" style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">
+          <small>(第一天晚上狼只能咬替身君)</small>
+         </td>
+        </tr>
+
+        <!--
+        <tr>
+         <td><label><strong>　公開投票結果票數：</strong></label></td>
+         <td>
+          <input name="game_option_open_vote" value="open_vote" type="checkbox" style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">
+          <small>(這是只有權利者存在於村子的時候才有效果的設定)</small>
+         </td>
+        </tr>
+        -->
+
+        <tr>
+         <td><label><strong>　16人以上決定者出場：</strong></label></td>
+         <td>
+          <input name="option_role_decide" value="decide" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(票數相同時決定者票為優先・可兼任)</small>
+         </td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　16人以上權力者出場：</strong></label></td>
+         <td>
+          <input name="option_role_authority" value="authority" type="checkbox" style="border-width:0px;border-style:solid;border-color:black;background-color:aliceblue;">
+          <small>(投票的票數為2票・可兼任)</small>
+         </td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　20人以上埋毒者出場：</strong></label></td>
+         <td>
+          <input name="option_role_poison" value="poison" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(白天被處刑的話，將會隨機帶一個人死亡。晚上被人狼襲擊的話，將會隨機帶一隻狼死亡)</small>
+         </td>
+        </tr>
+
+        <tr>
+         <td><label><strong>　幽靈是否可以看角色：</strong></label></td>
+         <td>
+          <input name="dellook" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(允許幽靈觀看角色)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟村民特技"干擾"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(晚上時可以干擾一名角色的行動)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟村民特技"繼承"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(當能力者死亡時，可以繼承能力者)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟村民特技"直覺"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(遊戲初期即知道其中一個角色為人類)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟占卜師特技"Ｗ占卜"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(可一次占卜兩名角色)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟占卜師特技"天眼"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(可一次占卜最多五名角色)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟獵人特技"Ｗ守護"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(可一次守護兩名角色)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟獵人特技"狩獵"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(可反守為攻、狩獵人狼)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟靈能者特技"？？"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(可以查看暴斃人物為人或狼)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟靈能者特技"？？"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(當死亡狼數一半以上時，靈能者自動兼權力者)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟共生者特技"互守"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(可以守護另一位守生者)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟共生者特技"同心"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(當共生者掛時，另一名也一起掛)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟埋毒特技"自爆"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(指定一名玩家，自己與該玩家同時陣亡)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟狂人特技"狼耳"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(狂人可以聽懂狼語 25% 機率)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟狂人特技"邪占"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(狂人可以占卜、並可以占死妖狐)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟狂人特技"直覺"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(狂人一開始可以知道其中一名人狼)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟人狼特技"Ｗ襲擊"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(人狼可以一次襲擊兩個對象)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟人狼特技"狼隱"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(人狼被占卜到時顯示為人)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟妖狐特技"迷惑"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(對象所指定的目標變為亂數)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟妖狐特技"結界"：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(妖狐被占到時，顯示為人且不會死)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟新職業"動物使"(人側)：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(動物使可以聽到狼語 50%)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟新職業"模仿師"(人側)：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(模仿師可以使用多樣技能)</small>
+         </td>
+        </tr>
+        
+        <tr>
+         <td><label><strong>　開啟新職業"哥德法"(狐側)：</strong></label></td>
+         <td>
+          <input name="vil_ab1" value="1" type="checkbox" style="border-width:0px;border-style:solid;border-color:silver;background-color:aliceblue;">
+          <small>(哥德法可以封言、禁止對象說話)</small>
+         </td>
+        </tr>
+
+        <tr>
+         <td></td>
+         <td align="right"><input type=submit value=" 建立 " style="border-width:1px;border-color:black;border-style:solid;"></td>
+        </tr>
+       </table>
+      </fieldset>
+     </form>
+    </td>
+   </tr>
+   <tr>
+    <td></td><td></td>
+    <td align="right"><div style="margin-top:10px;"><small>
+     [<a href="http://p45.aaacafe.ne.jp/~netfilms/" style="color:blue;" target=_blank>配布ホームページ</a>]
+     [写真素材　<a href="http://keppen.web.infoseek.co.jp/" style="color:blue;" target=_blank>天の欠片</a>]
+     [修改 <a href="http://test.ngct.net" style="color:blue;" target=_blank>小企鵝</a> 翻譯 殿]
+     [Beta003　<a href="http://jinro.sbh.idv.tw" style="color:blue;" target=_blank>蜜蜂貓之家</a>]
+     [網站管理者 <a href="index.php" style="color:blue;" target=_blank>路人甲</a>]
+    </small></div>
+    </td>
+   </tr>
+  </table>
+ </td>
+</tr>
+</table>
