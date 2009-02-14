@@ -4,8 +4,17 @@ class Village
   property :id, Serial
   timestamps :at
 
-  property :name, String
+  property :name,       String
+  property :description,String
+  
+  property :max_player, Integer
+  property :options,    String
+  property :start_time  DateTime
+  property :end_time    DateTime
+  
+  property :victory     Integer
 
+  has 1, :manager
   has n, :players
   has n, :days
 
