@@ -13,15 +13,18 @@ class Village
     chars   = Character.all.shuffle
     roles   =      Role.all.map{ |role|
                      [role] * case role
-                                when Villager;   10
-                                when Astrologer;  1
-                                when Coroner;     1
-                                when Guardian;    1
-                                when Disciple;    2
-                                when Avenger;     1
+                                when Villager;    7
+                                when Sage;        1
+                                when Psychic;     1
+                                when Guardsman;   1
+                                when Gemini;      2
+                                when Poisoner;    1
+                                when Mimic;       1
+                                when Zoologist;   1
                                 when Werewolf;    4
-                                when Tobewolf;    1
-                                when HuliJin;     1
+                                when Insane;      1
+                                when Ninetails;   1
+                                when Godfat;      1
                               end
                    }.flatten.shuffle
 

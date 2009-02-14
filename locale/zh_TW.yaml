@@ -1,65 +1,76 @@
-
-# web text
-title: 汝等是人是狼？
+--- 
+Character: 
+  - 
+    avatar: image/red.png
+    color: red
+    name: 紅包
+  - 
+    avatar: image/green.png
+    color: green
+    name: 綠燈
+  - 
+    avatar: image/blue.png
+    color: blue
+    name: 欄杆
+  - 
+    avatar: image/gold.png
+    color: gold
+    name: 黃金
+  - 
+    avatar: image/blueviolet.png
+    color: blueviolet
+    name: 子彈
+  - 
+    avatar: image/darkorange.png
+    color: darkorange
+    name: 黑橘子
+  - 
+    avatar: image/aqua.png
+    color: aqua
+    name: 泡泡
+  - 
+    avatar: image/darkkhaki.png
+    color: darkkhaki
+    name: 泥土
+  - 
+    avatar: image/chartreuse.png
+    color: chartreuse
+    name: 雞蛋
+  - 
+    avatar: image/magenta.png
+    color: magenta
+    name: 磁鐵
+  - 
+    avatar: image/royalblue.png
+    color: royalblue
+    name: 海
+Role: 
+  - 
+    Villager: 村民
+  - 
+    Sage: 占卜師
+  - 
+    Psychic: 靈能者
+  - 
+    Guardsman: 獵人
+  - 
+    Gemini: 共生者
+  - 
+    Poisoner: 埋毒者
+  - 
+    Mimic: 模仿士
+  - 
+    Zoologist: 動物使
+  - 
+    Werewolf: 人狼
+  - 
+    Insane: 狂人
+  - 
+    Ninetails: 妖狐
+  - 
+    Godfat: 哥德法
+bgcolor_day: maroon
+bgcolor_night: midnightblue
 locale_menu_descrition: 請選擇你的語系
 locale_name: 中文
-
-bgcolor_night: midnightblue
-bgcolor_day: maroon
-
-# db data
-Character:
-  - name: 紅包
-    color: red
-    avatar: image/red.png
-
-  - name: 綠燈
-    color: green
-    avatar: image/green.png
-
-  - name: 欄杆
-    color: blue
-    avatar: image/blue.png
-
-  - name: 黃金
-    color: gold
-    avatar: image/gold.png
-
-  - name: 子彈
-    color: blueviolet
-    avatar: image/blueviolet.png
-
-  - name: 黑橘子
-    color: darkorange
-    avatar: image/darkorange.png
-
-  - name: 泡泡
-    color: aqua
-    avatar: image/aqua.png
-
-  - name: 泥土
-    color: darkkhaki
-    avatar: image/darkkhaki.png
-
-  - name: 雞蛋
-    color: chartreuse
-    avatar: image/chartreuse.png
-
-  - name: 磁鐵
-    color: magenta
-    avatar: image/magenta.png
-
-  - name: 海
-    color: royalblue
-    avatar: image/royalblue.png
-
-Role:
-  - Villager: 村民
-  - Astrologer: 占星士
-  - Coroner: 驗屍官
-  - Guardian: 守衛
-  - Disciple: 門徒
-  - Avenger: 復仇者
-  - Werewolf: 人狼
-  - Tobewolf: 半狼
-  - HuliJin: 狐狸精
+title: 汝等是人是狼？

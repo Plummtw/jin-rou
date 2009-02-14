@@ -1,65 +1,76 @@
-
-# web text
-title: Are you a human, or werewolf?
-locale_menu_descrition: Please choose your locale
-locale_name: English
-
-bgcolor_night: midnightblue
-bgcolor_day: maroon
-
-# db data
-Character:
-  - name: Red
-    color: red
+--- 
+Character: 
+  - 
     avatar: image/red.png
-
-  - name: Green
-    color: green
+    color: red
+    name: Red
+  - 
     avatar: image/green.png
-
-  - name: Blue
-    color: blue
+    color: green
+    name: Green
+  - 
     avatar: image/blue.png
-
-  - name: Gold
-    color: gold
+    color: blue
+    name: Blue
+  - 
     avatar: image/gold.png
-
-  - name: Blue Violet
-    color: blueviolet
+    color: gold
+    name: Gold
+  - 
     avatar: image/blueviolet.png
-
-  - name: Dark Orange
-    color: darkorange
+    color: blueviolet
+    name: "Blue Violet"
+  - 
     avatar: image/darkorange.png
-
-  - name: Aqua
-    color: aqua
+    color: darkorange
+    name: "Dark Orange"
+  - 
     avatar: image/aqua.png
-
-  - name: Dark Khaki
-    color: darkkhaki
+    color: aqua
+    name: Aqua
+  - 
     avatar: image/darkkhaki.png
-
-  - name: Chartreuse
-    color: chartreuse
+    color: darkkhaki
+    name: "Dark Khaki"
+  - 
     avatar: image/chartreuse.png
-
-  - name: Magenta
-    color: magenta
+    color: chartreuse
+    name: Chartreuse
+  - 
     avatar: image/magenta.png
-
-  - name: Royal Blue
-    color: royalblue
+    color: magenta
+    name: Magenta
+  - 
     avatar: image/royalblue.png
-
-Role:
-  - Villager: Villager
-  - Astrologer: Astrologer
-  - Coroner: Coroner
-  - Guardian: Guardian
-  - Disciple: Disciple
-  - Avenger: Avenger
-  - Werewolf: Werewolf
-  - Tobewolf: Tobewolf
-  - HuliJin: HuliJin
+    color: royalblue
+    name: "Royal Blue"
+Role: 
+  - 
+    Villager: Villager
+  - 
+    Sage: Sage
+  - 
+    Psychic: Psychic
+  - 
+    Guardsman: Guardsman
+  - 
+    Gemini: Gemini
+  - 
+    Poisoner: Poisoner
+  - 
+    Mimic: Mimic
+  - 
+    Zoologist: Zoologist
+  - 
+    Werewolf: Werewolf
+  - 
+    Insane: Insane
+  - 
+    Ninetails: Ninetails
+  - 
+    Godfat: Godfat
+bgcolor_day: maroon
+bgcolor_night: midnightblue
+locale_menu_descrition: "Please choose your locale"
+locale_name: English
+title: "Are you a human, or werewolf?"

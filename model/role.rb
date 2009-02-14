@@ -6,29 +6,42 @@ class Role
   property :name, String
 end
 
+# Roles for the Order
 class Villager < Role
 end
 
-class Astrologer < Role
+class Sage < Role
 end
 
-class Coroner < Role
+class Psychic < Role
 end
 
-class Guardian < Role
+class Guardsman < Role
 end
 
-class Disciple < Role
+class Gemini < Role
 end
 
-class Avenger < Role
+class Poisoner < Role
 end
 
+class Mimic < Role
+end
+
+# Roles for the Order/Chaos
+class Zoologist < Role
+end
+
+# Roles for the Chaos
 class Werewolf < Role
 end
 
-class Tobewolf < Role
+class Insane < Role
 end
 
-class HuliJin < Role
+# Roles for the Variation
+class Ninetails < Role
+end
+
+class Godfat < Role
 end
